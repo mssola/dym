@@ -47,11 +47,9 @@ func levenshtein(string1, string2 string) int {
 // Get all the words from the given dictionary that are close to the given word
 // by a certain amount of distance.
 //
-// dict - A slice of strings containing the dictionary of words.
-//
-// word - The word that we are looking for.
-//
-// dist - The given distance.
+// The first argument is a slice of strings containing the dictionary of words.
+// The second argument is the words we are looking for. Finally, the dist
+// argument is the distance.
 //
 // Returns a new slice of strings containing the results.
 func SimilarDistance(dict []string, word string, dist int) []string {
@@ -68,9 +66,8 @@ func SimilarDistance(dict []string, word string, dist int) []string {
 // Get all the words from the given dictionary that are close to the given
 // word.
 //
-// dict - A slice of strings containing the dictionary of words.
-//
-// word - The word that we are looking for.
+// The first argument is a slice of strings containing the dictionary of words.
+// The second argument is the words we are looking for.
 //
 // Returns a new slice of strings containing the results.
 func Similar(dict []string, word string) []string {
