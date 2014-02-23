@@ -4,8 +4,10 @@ This package gets the inspiration from git's "Did you mean this?" feature.
 That is, it detects typos and it offers similar words that might be what the
 user really wanted to type. This package offers two public methods:
 
-    Similar(dict []string, word string) []string
-    SimilarDistance(dict []string, word string, dist int) []string
+~~~ go
+Similar(dict []string, word string) []string
+SimilarDistance(dict []string, word string, dist int) []string
+~~~
 
 The first method returns all the words from the given dictionary that are close
 to the given word. The second method is identical to the first one but it also
