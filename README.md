@@ -2,7 +2,7 @@
 
 This package gets the inspiration from git's "Did you mean this?" feature.
 That is, it detects typos and it offers similar words that might be what the
-user really wanted to type. This package offers three public methods:
+user really wanted to type. This package offers two public methods:
 
     Similar(dict []string, word string) []string
     SimilarDistance(dict []string, word string, dist int) []string
