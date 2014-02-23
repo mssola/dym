@@ -26,6 +26,9 @@ func main() {
 
   results := Similar(dict, a)
   // results now contains: ["thingie", "ting"]
+
+  results = SimilarDistance(dict, a, 1)
+  // results now contains: ["ting"]
 }
 ~~~
 
