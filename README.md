@@ -5,8 +5,8 @@ That is, it detects typos and it offers similar words that might be what the
 user really wanted to type. This package offers two public methods:
 
 ~~~ go
-Similar(dict []string, word string) []string
-SimilarDistance(dict []string, word string, dist int) []string
+func Similar(dict []string, word string) []string
+func SimilarDistance(dict []string, word string, dist int) []string
 ~~~
 
 The first method returns all the words from the given dictionary that are close
