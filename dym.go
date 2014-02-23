@@ -48,7 +48,9 @@ func levenshtein(string1, string2 string) int {
 // by a certain amount of distance.
 //
 // dict - A slice of strings containing the dictionary of words.
+//
 // word - The word that we are looking for.
+//
 // dist - The given distance.
 //
 // Returns a new slice of strings containing the results.
@@ -67,6 +69,7 @@ func SimilarDistance(dict []string, word string, dist int) []string {
 // word.
 //
 // dict - A slice of strings containing the dictionary of words.
+//
 // word - The word that we are looking for.
 //
 // Returns a new slice of strings containing the results.
