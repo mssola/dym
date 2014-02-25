@@ -25,6 +25,15 @@ func TestLevenshtein(t *testing.T) {
 	}
 }
 
+func TestIsSimilar(t *testing.T) {
+	if !IsSimilar("thing", "ting") {
+		t.Errorf("they're not really similar")
+	}
+	if IsSimilarDistance("thing", "tingu", 1) {
+		t.Errorf("they're similar")
+	}
+}
+
 func TestSimilar(t *testing.T) {
 	a := "thing"
 	dict := []string{"thingie", "lala", "ting"}

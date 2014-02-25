@@ -44,6 +44,17 @@ func levenshtein(string1, string2 string) int {
 	return d[l1]
 }
 
+// Returns if the two given words are close to each other with the given
+// distance.
+func IsSimilarDistance(string1, string2 string, dist int) bool {
+	return levenshtein(string1, string2) <= dist
+}
+
+// Returns if the two given words are similar.
+func IsSimilar(string1, string2 string) bool {
+	return levenshtein(string1, string2) <= DEFAULT_DISTANCE
+}
+
 // Get all the words from the given dictionary that are close to the given word
 // by a certain amount of distance.
 //
