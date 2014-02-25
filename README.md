@@ -12,6 +12,15 @@ func SimilarDistance(dict []string, word string, dist int) []string
 The first method returns all the words from the given dictionary that are close
 to the given word. The second method is identical to the first one but it also
 accepts a distance (the number of swaps, additions, deletions, etc. allowed).
+Finally, this package also provides a couple of helper methods:
+
+~~~ go
+func IsSimilar(string1, string2 string) bool
+func IsSimilarDistance(string1, string2 string, dist int) bool
+~~~
+
+The first method returns whether the two given strings are similar. The second
+method does the same but it also requires a distance.
 
 ## Usage
 
