@@ -5,7 +5,7 @@
 package dym
 
 // The default distance as used by the Similar function.
-const DEFAULT_DISTANCE = 3
+const DefaultDistance = 3
 
 // Compute the distance between the given strings by using the
 // Damerau-Levenshtein algorithm. It says how many letters need to be swapped,
@@ -52,7 +52,7 @@ func IsSimilarDistance(string1, string2 string, dist int) bool {
 
 // Returns if the two given words are similar.
 func IsSimilar(string1, string2 string) bool {
-	return levenshtein(string1, string2) <= DEFAULT_DISTANCE
+	return levenshtein(string1, string2) <= DefaultDistance
 }
 
 // Get all the words from the given dictionary that are close to the given word
@@ -82,5 +82,5 @@ func SimilarDistance(dict []string, word string, dist int) []string {
 //
 // Returns a new slice of strings containing the results.
 func Similar(dict []string, word string) []string {
-	return SimilarDistance(dict, word, DEFAULT_DISTANCE)
+	return SimilarDistance(dict, word, DefaultDistance)
 }
