@@ -35,10 +35,10 @@ func main() {
   a := "thing"
   dict := []string{"thingie", "lala", "ting"}
 
-  results := Similar(dict, a)
+  results := dym.Similar(dict, a)
   // results now contains: ["thingie", "ting"]
 
-  results = SimilarDistance(dict, a, 1)
+  results = dym.SimilarDistance(dict, a, 1)
   // results now contains: ["ting"]
 }
 ~~~
